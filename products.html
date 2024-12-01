@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة المنتجات</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="#" onclick="openCart()">سلة التسوق (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قائمة المنتجات -->
+    <section id="products">
+        <h2>المنتجات</h2>
+    </section>
+
+    <!-- سلة التسوق -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>سلة التسوق</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">المجموع: 0 دينار</p>
+            <button onclick="openCheckoutForm()">إتمام الطلب</button>
+        </div>
+    </div>
+
+    <!-- نموذج الدفع -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCheckoutForm()">&times;</span>
+            <h2>إتمام الطلب</h2>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name">
+            <label for="phone">رقم الهاتف:</label>
+            <input type="text" id="phone" name="phone">
+            <label for="address">العنوان:</label>
+            <input type="text" id="address" name="address">
+            <p id="final-total">المجموع: 0 دينار</p>
+            <button onclick="confirmOrder()">تأكيد الطلب</button>
+        </div>
+    </div>
+
+    <!-- إشعار منبثق -->
+    <div id="notification">
+        <p id="notification-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

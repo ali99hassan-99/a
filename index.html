@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الرئيسية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- شريط التنقل -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="products.html" class="nav-link">المنتجات</a></li>
+                <li><a href="#" onclick="openCart()" class="nav-link">سلة التسوق (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- مقدمة الموقع -->
+    <section id="hero">
+        <div class="hero-content">
+            <!-- إضافة صورة داخلية -->
+            <img src="images/logo.png" alt="شعار المتجر" class="hero-image">
+            <h1>مرحباً بكم في متجرنا</h1>
+            <h1>مركز احلى الاسعار للاتصالات</h1>
+            <p>تصفح مجموعتنا الرائعة من المنتجات المميزة.</p>
+            <a href="products.html" class="button">استعرض المنتجات</a>
+        </div>
+    </section>
+
+    <!-- إشعار منبثق -->
+    <div id="notification">
+        <p id="notification-message"></p>
+    </div>
+
+    <!-- سلة التسوق -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>سلة التسوق</h2>
+            <div id="cart-items"></div>
+            <p id="total-price">المجموع: 0 دينار</p>
+            <button onclick="openCheckoutForm()">إتمام الطلب</button>
+        </div>
+    </div>
+
+    <!-- نموذج تأكيد الطلب -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCheckoutForm()">&times;</span>
+            <h2>إتمام الطلب</h2>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name">
+            <label for="phone">رقم الهاتف:</label>
+            <input type="text" id="phone" name="phone">
+            <label for="address">العنوان:</label>
+            <input type="text" id="address" name="address">
+            <p id="final-total">المجموع: 0 دينار</p>
+            <button onclick="confirmOrder()">تأكيد الطلب</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
