@@ -298,14 +298,15 @@ header nav ul li a:hover {
     }
 
     .product {
-        width: 200px;
+        width: 45%; /* تقليل الحجم على الأجهزة المحمولة */
+        margin-bottom: 20px;
     }
 
     .hero-content img {
         width: 100px;
     }
 
-    /* جعل المنتجات تظهر في صفين على الهواتف */
+    /* جعل المنتجات تظهر بشكل مناسب في صفين */
     #products {
         flex-direction: row;
         flex-wrap: wrap;
@@ -313,7 +314,6 @@ header nav ul li a:hover {
     }
 
     .product {
-        width: 45%;
-        margin-bottom: 20px;
+        width: 48%; /* ضبط العرض ليناسب بشكل جيد في صفين */
     }
 }
