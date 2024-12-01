@@ -107,7 +107,7 @@ function confirmOrder() {
     const message = `طلب جديد:\nالاسم: ${name}\nرقم الهاتف: ${phone}\nالعنوان: ${address}\n\nالمنتجات:\n${productList}\nالمجموع: ${total} دينار`;
 
     // إرسال الرسالة عبر WhatsApp
-    const phoneNumber = '07734263681'; // رقم الهاتف الذي سيتم إرسال الرسالة إليه
+    const phoneNumber = '+9647734263681'; // رقم الهاتف الذي سيتم إرسال الرسالة إليه
     const encodedMessage = encodeURIComponent(message);
     const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
