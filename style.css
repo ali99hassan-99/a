@@ -11,7 +11,7 @@ body {
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 14px; /* تصغير حجم الخط */
 }
 
 /* الإشعار المنبثق */
@@ -21,7 +21,7 @@ body {
     right: 20px;
     background-color: #ffc107;
     color: #000;
-    padding: 12px 20px;
+    padding: 8px 15px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
@@ -38,7 +38,7 @@ body {
 /* شريط التنقل */
 header {
     background-color: #333;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 header nav ul {
@@ -48,14 +48,14 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px 15px;
+    font-size: 16px;
+    padding: 8px 12px;
     border-radius: 4px;
     background-color: #000;
     transition: background-color 0.3s ease;
@@ -70,21 +70,23 @@ header nav ul li a:hover {
 #products {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
 .product {
-    width: 250px;
-    padding: 15px;
+    width: 48%; /* كل منتج يشغل 48% من العرض */
+    padding: 12px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px; /* تصغير حجم النص */
 }
 
 .product:hover {
@@ -93,21 +95,21 @@ header nav ul li a:hover {
 
 .product img {
     width: 100%;
-    height: 250px; /* جعل الصورة مربعة */
-    object-fit: cover; /* يحافظ على الأبعاد */
+    height: 200px; /* تصغير حجم الصورة */
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
 .product h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
     color: #333;
 }
 
 .product p {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 14px;
+    margin-bottom: 12px;
     color: #666;
 }
 
@@ -115,8 +117,8 @@ header nav ul li a:hover {
     background-color: #ffc107;
     color: black;
     border: none;
-    padding: 15px 20px;
-    font-size: 18px;
+    padding: 12px 18px;
+    font-size: 16px; /* تصغير حجم الخط */
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -135,27 +137,27 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* خلفية مظللة داكنة */
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
-    overflow-y: auto; /* دعم التمرير في حال زيادة المحتوى */
+    overflow-y: auto;
 }
 
 .modal-content {
     background-color: #fff;
     margin: 50px auto;
-    padding: 30px;
+    padding: 20px;
     width: 90%;
-    max-width: 500px;
+    max-width: 450px; /* تصغير عرض الصندوق */
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    font-size: 18px;
+    font-size: 16px; /* تصغير حجم الخط */
     line-height: 1.8;
     color: #333;
     text-align: center;
 }
 
 .close {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: #dc3545;
     float: right;
@@ -167,14 +169,14 @@ header nav ul li a:hover {
 }
 
 .modal-content h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 15px;
     color: #007bff;
 }
 
 .cart-item {
-    margin-bottom: 15px;
-    padding: 10px 0;
+    margin-bottom: 12px;
+    padding: 8px 0;
     border-bottom: 1px solid #ddd;
     text-align: left;
     display: flex;
@@ -188,12 +190,12 @@ header nav ul li a:hover {
 
 .cart-item button {
     background-color: #dc3545;
-    padding: 10px 20px;
+    padding: 8px 15px;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px; /* تصغير الحجم */
     width: 100%;
 }
 
@@ -202,9 +204,9 @@ header nav ul li a:hover {
 }
 
 #total-price {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
     color: #28a745;
     text-align: center;
 }
@@ -213,10 +215,10 @@ header nav ul li a:hover {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 15px 20px;
+    padding: 12px 20px;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
     transition: background-color 0.3s ease;
     width: 100%;
 }
@@ -227,11 +229,11 @@ header nav ul li a:hover {
 
 #checkout-modal input {
     width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
+    padding: 12px;
+    margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* الهيرو */
@@ -243,32 +245,32 @@ header nav ul li a:hover {
     background: url('images/hero.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
-    padding: 120px 20px;
+    padding: 100px 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content img {
-    width: 120px;
+    width: 100px;
     height: auto;
     margin-bottom: 20px;
     border-radius: 50%;
 }
 
 .hero-content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 15px;
     color: #ffcc00;
 }
 
 .hero-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 
 .button {
     background-color: #ffcc00;
-    padding: 15px 30px;
-    font-size: 18px;
+    padding: 12px 25px;
+    font-size: 16px;
     text-decoration: none;
     color: black;
     border-radius: 5px;
@@ -281,39 +283,38 @@ header nav ul li a:hover {
 
 /* استجابة للأجهزة المحمولة */
 @media (max-width: 768px) {
-    #hero {
-        padding: 80px 20px;
-    }
-
-    .hero-content h1 {
-        font-size: 28px;
-    }
-
-    .hero-content p {
-        font-size: 18px;
-    }
-
-    .button {
-        font-size: 16px;
-    }
-
     .product {
-        width: 45%; /* تقليل الحجم على الأجهزة المحمولة */
-        margin-bottom: 20px;
+        width: 48%; /* تعديل عرض المنتجات ليكون 48% ليظهر منتجين في صف */
+        padding: 10px;
     }
 
-    .hero-content img {
-        width: 100px;
+    .product h3 {
+        font-size: 14px;
     }
 
-    /* جعل المنتجات تظهر بشكل مناسب في صفين */
+    .product p {
+        font-size: 12px;
+    }
+
+    .product button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
     #products {
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
 
-    .product {
-        width: 48%; /* ضبط العرض ليناسب بشكل جيد في صفين */
+    .hero-content h1 {
+        font-size: 22px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 14px;
     }
 }
