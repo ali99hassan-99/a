@@ -116,7 +116,8 @@ header nav ul li a:hover {
 /* المنتجات */
 #products {
     display: flex;
-    justify-content: space-between; /* ترتيب المنتجات في صف واحد */
+    flex-wrap: wrap; /* تمكين التفاف العناصر */
+    justify-content: space-between; /* توزيع العناصر على المساحة */
     padding: 15px;
     text-align: center;
 }
