@@ -115,24 +115,22 @@ header nav ul li a:hover {
 
 /* المنتجات */
 #products {
-    display: flex;
-    flex-wrap: wrap; /* تمكين التفاف العناصر */
-    justify-content: space-between; /* توزيع العناصر على المساحة */
-    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* استخدام grid بدلاً من flex */
+    gap: 20px; /* مسافة بين المنتجات */
+    padding: 20px;
     text-align: center;
 }
 
 .product {
-    width: 48%; /* كل منتج يشغل 48% من العرض */
-    padding: 12px;
+    padding: 15px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     text-align: center;
-    margin-bottom: 15px;
-    font-size: 14px; /* تصغير حجم النص */
+    font-size: 14px;
 }
 
 .product:hover {
