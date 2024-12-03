@@ -69,6 +69,44 @@ header nav ul li a:hover {
     color: #000;
 }
 
+/* مقدمة الموقع */
+#hero {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.hero-image {
+    max-width: 200px;
+    margin: 20px 0;
+}
+
+.hero-content p {
+    font-size: 16px;
+    color: #777;
+}
+
+.hero-content .button {
+    background-color: #ffc107;
+    color: black;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.hero-content .button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 /* المنتجات */
 #products {
     display: flex;
